@@ -6,7 +6,6 @@ I used the following technologies / frameworks in my project:
 
 - JavaScript
 - Angular
-- ...
 
 I chose Angular because its the framework i am most comfortabel with even after working with react and ember in my current role!
 
