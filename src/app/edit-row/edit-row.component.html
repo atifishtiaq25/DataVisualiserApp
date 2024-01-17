@@ -1,0 +1,18 @@
+<form [formGroup]="dynamicForm" (ngSubmit)="onSubmit()">
+	<h2>Edit Selected Row Data</h2>
+
+  <div *ngFor="let controlName of dynamicForm.controls | keyvalue" class="dynamicForm">
+    <mat-form-field>
+			<mat-label>{{controlName.key}}</mat-label>
+      <input matInput [formControlName]="controlName.key" placeholder="{{ controlName.key }}">
+    </mat-form-field>
+  </div>
+	<div *ngIf="!isNewRow" class="submitButton">
+		<button mat-raised-button color="primary" type="submit">Save Changes</button>
+	</div>
+  <div *ngIf="isNewRow" class="submitButton">
+		<button mat-raised-button color="primary" type="submit">Add new data</button>
+	</div>
+
+<!--   <button mat-button type="submit">Save Changes</button>
+ --></form>

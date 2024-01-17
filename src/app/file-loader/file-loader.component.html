@@ -1,0 +1,23 @@
+<div *ngIf="!loading">
+  <div *ngIf="!fileLoaded" fileLoaded class="file-input-container">
+		<div class="file-button file-input-button" (click)="fileInput.click()" aria-label="Choose a file to upload">
+			<label for="formFile" class="form-label">Upload a file</label>
+			<input type="file" #fileInput (change)="onFileChange($event)" accept=".csv" style="display: none" />
+			<mat-icon color="primary">attach_file</mat-icon>
+		</div>
+	</div>
+	<div *ngIf="fileLoaded" fileLoaded class="file-input-container">
+		<div class="file-button file-input-button" (click)="fileInput.click()" aria-label="Choose a new file to upload">
+			<label for="formFile" class="form-label">Upload a new file</label>
+			<input type="file" #fileInput (change)="onFileChange($event)" accept=".csv" style="display: none" />
+			<mat-icon color="primary">attach_file</mat-icon>
+		</div>
+	</div>
+	
+</div>
+
+<div *ngIf="loading" class="center">
+  <mat-spinner diameter="60">
+	</mat-spinner>
+	Please wait while your CSV file is being uploaded and processed ...
+</div>

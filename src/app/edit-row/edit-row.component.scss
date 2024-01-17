@@ -1,0 +1,27 @@
+form {
+    padding: 20px 0;
+}
+
+h2 {
+   margin: 0px 30px 10px;
+}
+
+mat-form-field {
+    margin: 10px 10px 5px 10px;
+    width: 100%;
+}
+
+mat-form-field:nth-child(2n) {
+    flex-basis: 100%;
+}
+
+.submitButton {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.dynamicForm {
+    display: flex;
+    padding: 0 20px;
+}

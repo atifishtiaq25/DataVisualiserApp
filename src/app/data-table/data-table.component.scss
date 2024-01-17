@@ -1,0 +1,37 @@
+mat-row {
+  cursor: pointer;
+}
+
+mat-icon {
+  padding-left: 10px;;
+}
+
+table {
+  overflow: auto;
+}
+
+.file-edit-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  	gap: 0px 30px;
+}
+
+.file-button {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	width: 250px;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+.create-new-button {
+  background-color: #fdf4d7 ;
+}
+
+.download-csv-button {
+  background-color: #eeeeee;
+}
